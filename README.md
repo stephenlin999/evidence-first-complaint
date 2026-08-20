@@ -4,7 +4,7 @@ A lightweight Agent Skill for analyzing ordinary consumer disputes from the evid
 
 > **Evidence before rhetoric.**
 
-The skill helps an AI determine what the available record supports, what remains only a claim, what weakens the user's position, and which small next step is most likely to advance the requested remedy. It is deliberately an analysis skill rather than a generic generator for forceful complaint letters.
+The skill helps an AI show the user's viable options immediately, determine what the available record supports, and recommend the smallest useful next step. It analyzes the evidence while concurrently checking applicable regulations and official complaint routes. It is deliberately an analysis skill rather than a generic generator for forceful complaint letters.
 
 ## What it covers
 
@@ -18,9 +18,9 @@ Representative uses include:
 
 ## How it works
 
-The workflow separates **facts**, **evidence**, **claims**, and **inferences** instead of treating the user's account as established fact. It builds a short chronology, tests disputed claims against direct evidence, surfaces contradictions and weaknesses, and rates the current position as Strong, Moderate, Weak, or Insufficient evidence.
+The workflow first identifies the jurisdiction and presents an option menu with a recommendation, fallback, and conditional escalation. It then separates **facts**, **evidence**, **claims**, and **inferences**, while a parallel track verifies current applicable law and the relevant government consumer body, regulator, ombudsman, or official complaint procedure.
 
-Unlike a generic complaint-writing prompt, it does not automatically advocate, browse broadly, or reach first for legal threats. It seeks only evidence that could change the assessment and recommends the minimum useful next action. A complaint is drafted only when requested or clearly appropriate.
+Unlike a generic complaint-writing prompt, it does not automatically advocate, browse broadly, or reach first for legal threats. Regulatory research is mandatory but targeted and based on official sources; case law is checked only when it could resolve a material ambiguity. A complaint is drafted only when requested or clearly appropriate.
 
 ## Install
 
@@ -46,11 +46,11 @@ On systems that support model-invoked skills, the description in `SKILL.md` also
 
 ## Small example
 
-If a hotel says transportation remained available, the skill treats the denial as a fact supported by the written response, the hotel's transport statement as a claim, and the status of the user's actual route as critical missing evidence. It may rate the position as Insufficient evidence and recommend obtaining one official route-status record before escalating.
+If a hotel says transportation remained available, the skill first shows plausible paths such as merchant reconsideration, a booking-platform process, insurance, and any applicable official complaint route. In parallel, it checks the governing rules while treating the denial as a fact supported by the written response, the hotel's transport statement as a claim, and the status of the user's actual route as critical missing evidence.
 
 ## Limitations
 
-The assessment is only as reliable as the supplied or verifiable record. The skill does not authenticate documents, guarantee a remedy, or replace professional legal advice. Laws, policies, and live service conditions may require targeted verification from an authoritative current source.
+The assessment is only as reliable as the supplied or verifiable record and the correctly identified jurisdiction. The skill does not authenticate documents, guarantee a remedy, or replace professional legal advice. Laws, policies, and live service conditions require verification from authoritative current sources.
 
 ## Repository structure
 
